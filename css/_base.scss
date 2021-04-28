@@ -1,5 +1,11 @@
-$colors: (color1: blue, color2: red, color3: yellow);
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-@each $key, $color in $colors {
-  .#{$color}-text {color: $color;}
+body {
+  @extend .flex-center;
+  flex-direction: column;
+  height: 100%;
 }
