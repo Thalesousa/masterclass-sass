@@ -1,11 +1,8 @@
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+p {
+  color: red;
+  cursor: pointer;
 
-body {
-  @extend .flex-center;
-  flex-direction: column;
-  height: 100%;
+  &:hover {
+    color: blue;
+  }
 }
